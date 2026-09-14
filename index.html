@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKY RISE - टावर बनाओ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <div>स्कोर: <span id="score">0</span></div>
+        <div id="hearts">❤️❤️❤️❤️❤️</div>
+        <div>बेस्ट: <span id="high-score">0</span></div>
+    </div>
 
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="start-screen" class="screen">
+        <h1>🏗️ SKY RISE</h1>
+        <p>ऊंची इमारत बनाओ!</p>
+        <p style="font-size:14px;color:#aaa;">Tap / Click करके ब्लॉक रखो</p>
+        <button id="start-btn">शुरू करो ▶️</button>
+        <p id="hs-show" style="color:#FFD700;font-size:14px;"></p>
+    </div>
+
+    <div id="gameover-screen" class="screen" style="display:none">
+        <h2>😢 खेल खत्म!</h2>
+        <p>ब्लॉक बनाए: <b id="final-score">0</b></p>
+        <p>हाई स्कोर: <b id="final-hs">0</b></p>
+        <button id="restart-btn">फिर से खेलो 🔄</button>
+        <button id="share-btn" style="background:#25D366;color:white;">WhatsApp Share 📱</button>
+    </div>
+
+    <div id="win-screen" class="screen" style="display:none">
+        <h2>🏆 जीत गए!</h2>
+        <p>100 ब्लॉक पूरे! शाबाश!</p>
+        <button id="play-again-btn">फिर से खेलो 🔄</button>
+    </div>
+
+    <div id="sound-btn" onclick="toggleSound()">🔊</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
