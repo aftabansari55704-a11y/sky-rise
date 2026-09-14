@@ -1,1 +1,85 @@
+* { margin:0; padding:0; box-sizing:border-box; }
 
+body {
+    background: #0d0d1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#wrap {
+    position: relative;
+    width: 400px;
+    height: 600px;
+}
+
+#header {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 14px;
+}
+
+#hearts { font-size: 15px; letter-spacing: 1px; }
+
+#gameCanvas {
+    width: 400px;
+    height: 600px;
+    display: block;
+    cursor: pointer;
+}
+
+.screen {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.88);
+    color: white;
+    z-index: 20;
+    gap: 14px;
+    text-align: center;
+    padding: 20px;
+}
+
+.screen h1 { font-size: 50px; color: #FFD700; }
+.screen h2 { font-size: 36px; color: #FFD700; }
+.screen p  { font-size: 16px; color: #ccc; }
+
+button {
+    padding: 12px 28px;
+    font-size: 17px;
+    background: #FFD700;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #111;
+    transition: transform 0.1s;
+}
+button:active { transform: scale(0.93); }
+
+#sound-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 15;
+    cursor: pointer;
+    font-size: 20px;
+    background: rgba(0,0,0,0.5);
+    padding: 5px 9px;
+    border-radius: 8px;
+    color: white;
+    user-select: none;
+}
